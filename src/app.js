@@ -111,3 +111,14 @@ function showCelciusTemperature(event) {
 }
 
 let celciusTemperature = null; 
+
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", showFahrenehitTemperature);
+let celciusLink = document.querySelector("#celcius-link");
+celciusLink.addEventListener("click", showCelciusTemperature);
+
+
+search("New York");
