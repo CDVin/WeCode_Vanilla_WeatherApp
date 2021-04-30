@@ -34,3 +34,14 @@ h1 {
   padding-bottom: 20px;
   font-weight: 700;
 }
+
+.weather-app-wrapper {
+  font-weight: 500;
+  line-height: 1;
+  font-size: 48px;
+}
+.units {
+  position: relative;
+  font-size: 18px;
+  top: -34px;
+}
