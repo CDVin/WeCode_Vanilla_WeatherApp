@@ -35,3 +35,12 @@ function displayForecast(response) {
      </div>`;
     }
   });
+   forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+function getForecast(coordinates) {
+ let apiKey = "60fdd99ad6f737d97b1a9594e9fd7160";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  let units = "metric";
+  axios.get(apiUrl).then(displayForecast);
+}
