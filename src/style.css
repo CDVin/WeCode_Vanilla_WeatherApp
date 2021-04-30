@@ -69,3 +69,19 @@ h1 {
 .weather-forecast-temperatures {
   font-size: 16px;
 }
+
+.footer {
+  text-align: center;
+  color: black;
+}
+
+#footer-link {
+  color: #0ABAB5
+  opacity: 0.4;
+}
+
+#search-button {
+  background-color: #0ABAB5
+  border-color: #00adb5;
+}
+
