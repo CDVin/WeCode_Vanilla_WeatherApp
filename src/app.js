@@ -32,8 +32,8 @@ function displayForecast(response) {
     if (index < 6) {
       forecastHTML =
         forecastHTML +
-
- <div class="col-2">
+    
+ <div class="col-2" >
  <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
          <img src="http://openweathermap.org/img/wn/${
            forecastDay.weather[0].icon
@@ -94,15 +94,16 @@ function handleSubmit(event) {
   let cityInputElement = document.querySelector("#city-input");
   search(cityInputElement.value);
 }
-function showFahrenehitTemperature(event) {
+
+function displayFahrenehitTemperature(event) {
  event.preventDefault();
   celciusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
-  let fahrenheitTemperature = (19 * 9) / 5 + 32;
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
-function showCelciusTemperature(event) {
+function displayCelciusTemperature(event) {
   event.preventDefault();
   celciusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");
@@ -113,10 +114,13 @@ function showCelciusTemperature(event) {
 let celciusTemperature = null; 
 
 
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", showFahrenehitTemperature);
+
 let celciusLink = document.querySelector("#celcius-link");
 celciusLink.addEventListener("click", showCelciusTemperature);
 
