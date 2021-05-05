@@ -35,35 +35,39 @@
                   type="submit"
                   value="Search"
                   class="btn btn-primary w-100"
-                  d="search-button"
+                  id="search-button"
                 />
             </div>
           </form>
           <div clas="overview"></div>
           <h1 id="city">New York</h1>
           <ul>
-            <li>Last updated: <span id="date"></span></li>
-            <li id="description">Clear</li>
+            <li>
+            Last updated:
+              <span id="date">Saturday 22:44</span>
+            </li>
+            <li id="description">broken blouds</li>
           </ul>
         </div>
         <div class="row">
           <div class="col-6">
             <div class="clearfix weather-temperature">
               <img
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                alt="Clear"
                 id="icon"
-                class="float-left"/>
+                class="float-left"
+                class="main-image"src="http://openweathermap.org/img/wn/04d@2x.png"
+                alt="Overcast, high cloud"/>
               <div class="float-left">
-                <strong class="main-temp" id="temperature"></strong
+                <strong class="main-temp" id="temperature">19</strong
                 ><span class="units"
                   ><a href="#" id="celcius-link" class="active">°C </a>/
-                  <a href="#" id="fahrenheit-link" class="active">°F</a></span
-                >
+                  <a href="#" id="fahrenheit-link" class="active">°F</a></span>
+      
                 </div>
-            </div>
           </div>
-          
+</div>
+
+
           <div class="col-6">
             <ul>
               <li>Humidity: <span id="humidity"></span>%</li>
@@ -71,9 +75,61 @@
             </ul>
           </div>
           </div>
+
           <div class="weather-forecast" id="forecast"></div>
-        </div>
-    
+       <div class="row">
+          <div class="col-2">
+            <div class="weather-forecast-date" id="forecast-feature">Friday</div>
+            <img src="http://openweathermap.org/img/wn/10d@2x.png">
+          <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temperature-max"><strong>23°C </strong> | </span>
+            <span class="weather-forecast-temperatures">6°C </span>
+          </div>
+       </div>
+
+   <div class="col-2">
+            <div class="weather-forecast-date"id="forecast-feature">Saturday</div>
+            <img src="http://openweathermap.org/img/wn/01d@2x.png">
+          <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temperature-max"><strong>27°C </strong> | </span>
+            <span class="weather-forecast-temperatures">10°C </span>
+          </div>
+       </div>
+         <div class="col-2">
+            <div class="weather-forecast-date"id="forecast-feature">Sunday</div>
+            <img src="http://openweathermap.org/img/wn/10d@2x.png">
+          <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temperature-max"><strong>18°C </strong> | </span>
+            <span class="weather-forecast-temperatures">6°C </span>
+          </div>
+       </div>
+        <div class="col-2">
+            <div class="weather-forecast-date"id="forecast-feature">Monday</div>
+            <img src="http://openweathermap.org/img/wn/10d@2x.png">
+          <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temperature-max"><strong>20°C </strong> | </span>
+            <span class="weather-forecast-temperatures">9°C </span>
+            
+    </div>
+  </div>
+   <div class="col-2">
+            <div class="weather-forecast-date"id="forecast-feature">Tuesday</div>
+            <img src="http://openweathermap.org/img/wn/02d@2x.png">
+          <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temperature-max"><strong>24°C </strong> | </span>
+            <span class="weather-forecast-temperatures">17°C </span>
+          </div>
+       </div>
+          <div class="col-2">
+            <div class="weather-forecast-date"id="forecast-feature">Wednesday</div>
+            <img src="http://openweathermap.org/img/wn/04d@2x.png">
+          <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temperature-max"><strong>14°C </strong> | </span>
+            <span class="weather-forecast-temperatures">4°C </span>
+          </div>
+       </div>
+   </div>
+ </div>
         <small class="footer">
           Coded by
           <a href="" id="footer-link">🐝 DinaV </a>
