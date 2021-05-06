@@ -55,9 +55,13 @@ function displayTemperature(response) {
   getForecast(response.data.coord);
 }
 
-function search(city) {
+function handleSubmit(event) {
+event.preventDefault();
+let cityInputElement=document.querySelector("city-input");
+search(cityInputElement.value);
+}
+//(city) {;
   let apiKey = "60fdd99ad6f737d97b1a9594e9fd7160";
-  let city = "Paris"
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
  
   axios.get(apiUrl).then(displayTemperature);
@@ -65,4 +69,9 @@ function search(city) {
 
 search("New York");
 
-
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", showFahrenehitTemperature);
+let celciusLink = document.querySelector("#celcius-link");
+celciusLink.addEventListener("click", showCelciusTemperature);
