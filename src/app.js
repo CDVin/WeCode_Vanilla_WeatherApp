@@ -109,8 +109,6 @@ function displayFahrenehitTemperature(event) {
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
-let celciusTemperature = null;
-
 function displayCelciusTemperature(event) {
   event.preventDefault();
   celciusLink.classList.add("active");
@@ -118,6 +116,8 @@ function displayCelciusTemperature(event) {
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celciusTemperature);
 }
+
+let celciusTemperature = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
