@@ -63,7 +63,8 @@ function displayTemperature(response) {
   let iconElement = document.querySelector("#icon");
 
   celciusTemperature = response.data.main.temp;
-  temperatureElement.innerHTML = Math.round(response.data.main.temp);
+
+  temperatureElement.innerHTML = Math.round(celciusTemperature);
   cityElement.innerHTML = response.data.name;
   descrpitionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
@@ -108,6 +109,8 @@ function displayFahrenehitTemperature(event) {
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
+let celciusTemperature = null;
+
 function displayCelciusTemperature(event) {
   event.preventDefault();
   celciusLink.classList.add("active");
@@ -116,7 +119,6 @@ function displayCelciusTemperature(event) {
   temperatureElement.innerHTML = Math.round(celciusTemperature);
 }
 
-searchCity("Zurich");
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
@@ -126,7 +128,4 @@ fahrenheitLink.addEventListener("click", displayFahrenehitTemperature);
 let celciusLink = document.querySelector("#celcius-link");
 celciusLink.addEventListener("click", displayCelciusTemperature);
 
-//to add the HTML and CSS for forecast
-//to add the API call to get the forecast
-//to replace the dummy content with real data
-// repeat by multiple days
+searchCity("Zurich");
