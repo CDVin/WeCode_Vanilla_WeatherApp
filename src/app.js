@@ -125,3 +125,8 @@ fahrenheitLink.addEventListener("click", displayFahrenehitTemperature);
 
 let celciusLink = document.querySelector("#celcius-link");
 celciusLink.addEventListener("click", displayCelciusTemperature);
+
+//to add the HTML and CSS for forecast
+//to add the API call to get the forecast
+//to replace the dummy content with real data
+// repeat by multiple days
