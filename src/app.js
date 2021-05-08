@@ -1,9 +1,9 @@
 function formatDate(timestamp) {
   //calculate the date
   let date = new Date(timestamp * 1000);
-  let hours = timestamp.getHours();
+  let hours = date.getHours();
   if (hours < 10) {
-    hours = `0${minutes}`;
+    hours = `0${hours}`;
   }
   let minutes = date.getMinutes();
   if (minutes < 10) {
@@ -48,7 +48,7 @@ function displayForecast(response) {
             )}</div>
             <img 
             src="http://openweathermap.org/img/wn/${
-              forecast.weather[0].icon
+              forecastDay.weather[0].icon
             }@2x.png"
             alt=""
             width="42"
@@ -66,8 +66,8 @@ function displayForecast(response) {
     }
   });
 
-  forecastHTML = forecastHTML`</div>`;
-  forecastelement.innerHTML = forecastHTML;
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
 }
 
 function getForecast(coordinates) {
