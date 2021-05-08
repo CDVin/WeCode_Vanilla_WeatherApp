@@ -22,51 +22,53 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
-function formatDay(timestamp){
+function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
-  let day =date.getDay()
-  let days=[ 
-    "Sun",
-    "Mon",
-    "Tues",
-    "Wed",
-    "Thurs",
-    "Fri",
-    "Sat",
-    ]
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
 
-return days[day];
+  return days[day];
 }
 
-function displayForecast(response){
-let forecast = response.data.daily;
-let forecastElement = document.querySelector("#forecast");
+function displayForecast(response) {
+  let forecast = response.data.daily;
 
-let forecastHTML =`<div class"row ”>`;
+  let forecastElement = document.querySelector("#forecast");
 
-forecast.forEach(function(forecastDay){
-forecastHTML = 
-  forecastHTML + 
-  `
+  let forecastHTML = `<div class"row ”>`;
+
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 6) {
+      forecastHTML =
+        forecastHTML +
+        `
           <div class="col-2">
-            <div class="weather-forecast-date" id="forecast-feature">${formatDay(forecastDay.dt)}</div>
+            <div class="weather-forecast-date" id="forecast-feature">${formatDay(
+              forecastDay.dt
+            )}</div>
             <img 
-            src="http://openweathermap.org/img/wn/${forecast.weather[0]}10d@2x.png"
+            src="http://openweathermap.org/img/wn/${
+              forecast.weather[0].icon
+            }@2x.png"
             alt=""
             width="42"
             />
           <div class="weather-forecast-temperatures">
-            <span class="weather-forecast-temperature-max"><strong>${Math.round(forecastDay.temp.max)}°</strong> | </span>
-            <span class="weather-forecast-temperatures-min">${Math.round(forecastDay.temp.min)}°</span>
+            <span class="weather-forecast-temperature-max"><strong>${Math.round(
+              forecastDay.temp.max
+            )}°</strong> | </span>
+            <span class="weather-forecast-temperatures-min">${Math.round(
+              forecastDay.temp.min
+            )}°</span>
           </div>
        </div>
-
 `;
+    }
+  });
+
+  forecastHTML = forecastHTML`</div>`;
+  forecastelement.innerHTML = forecastHTML;
 }
-
-forecastHTML= forecastHTML`</div>`;
-forecastelement.innerHTML = forecastHTML; 
-
 
 function getForecast(coordinates) {
   let apiKey = "60fdd99ad6f737d97b1a9594e9fd7160";
@@ -98,7 +100,6 @@ function displayTemperature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
   getForecast(response.data.coord);
-
 }
 
 function searchCity(city) {
@@ -141,8 +142,6 @@ function displayCelsiusTemperature(event) {
 }
 
 let celsiusTemperature = null;
-
-
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
