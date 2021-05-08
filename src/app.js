@@ -46,12 +46,12 @@ forecastHTML =
             <span class="weather-forecast-temperatures-min">6°C </span>
           </div>
        </div>
-</div>
+
 `;
 }
 forecastHTML= forecastHTML`</div>`;
 forecastelement.innerHTML = forecastHTML; 
-}
+
 
 function getForecast(coordinates) {
   let apiKey = "60fdd99ad6f737d97b1a9594e9fd7160";
@@ -81,7 +81,9 @@ function displayTemperature(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+
   getForecast(response.data.coord);
+
 }
 
 function searchCity(city) {
@@ -127,8 +129,6 @@ let celsiusTemperature = null;
 
 
 
-
-
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
@@ -139,4 +139,3 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 searchCity("Zurich");
-displayForecast();
