@@ -23,8 +23,8 @@ function formatDate(timestamp) {
 }
 
 
-
-function displayForecast(){
+function displayForecast(response){
+let forecast = response.data.daily;
 let forecastElement = document.querySelector("#forecast");
 
 let days =["Friday", "Saturday", "Sunday", "Monday", "Tuesday", "Wednesday"];
