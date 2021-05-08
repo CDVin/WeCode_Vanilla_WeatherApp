@@ -21,6 +21,8 @@ function formatDate(timestamp) {
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
+
+function
 function formatDate(timestamp) {
   let date = new Date(timestamp * 1000);
   let days = [
@@ -119,6 +121,10 @@ function displayCelsiusTemperature(event) {
 
 let celsiusTemperature = null;
 
+
+
+
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
@@ -129,3 +135,47 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 searchCity("Zurich");
+
+
+function displayForecast(){
+let forecastElement = document.querySelector("#forecast");
+
+let forecastHTML =`<div class"row ”>`;
+let days =[""]
+forecastHTML = 
+  forecastHTML + 
+  `
+          <div class="col-2">
+            <div class="weather-forecast-date" id="forecast-feature">Friday</div>
+            <img 
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+            alt=""
+            width="42"
+            />
+          <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temperature-max"><strong>23°C </strong> | </span>
+            <span class="weather-forecast-temperatures-min">6°C </span>
+          </div>
+       </div>
+</div>
+`;
+forecastHTML = 
+  forecastHTML + 
+  `
+          <div class="col-2">
+            <div class="weather-forecast-date" id="forecast-feature">Friday</div>
+            <img 
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+            alt=""
+            width="42"
+            />
+          <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temperature-max"><strong>23°C </strong> | </span>
+            <span class="weather-forecast-temperatures-min">6°C </span>
+          </div>
+       </div>
+</div>
+`;
+forecastHTML= forecastHTML`</div>`;
+forecastelement.innerHTML = forecastHTML; 
+}
