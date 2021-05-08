@@ -48,6 +48,7 @@ forecastHTML =
 
 `;
 }
+
 forecastHTML= forecastHTML`</div>`;
 forecastelement.innerHTML = forecastHTML; 
 
