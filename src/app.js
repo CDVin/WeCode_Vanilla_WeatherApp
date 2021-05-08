@@ -1,6 +1,6 @@
 function formatDate(timestamp) {
   //calculate the date
-  let date = new Date(timestamp * 1000);
+  let date = new Date(timestamp);
   let hours = date.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
@@ -35,7 +35,7 @@ function displayForecast(response) {
 
   let forecastElement = document.querySelector("#forecast");
 
-  let forecastHTML = `<"div class"row”>`;
+  let forecastHTML = `<div class="row”>`;
 
   forecast.forEach(function (forecastDay, index) {
     if (index < 6) {
