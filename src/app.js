@@ -37,16 +37,33 @@ function formatDate(timestamp) {
   return days[date.getDay()];
 }
 
-function displayForecast(response) {
-  let forecast = response.data.daily;
-  let forecastElement = document.querySelector("#forecast");
-  let forecastHTML = `<div class="row">`;
-  forecast.forEach(function (forecastDay, index) {
-    if (index < 6) {
-      // forecastHTML =
-      //   forecastHTML +
-    }
-  });
+function displayForecast(){
+let forecastElement = document.querySelector("#forecast");
+//forecast for the week
+let days =["Friday", "Saturday", "Sunday", "Monday", "Tuesday", "Wednesday"];
+let forecastHTML =`<div class"row ”>`;
+
+days.forEach(function(day)){
+forecastHTML = 
+  forecastHTML + 
+  `
+          <div class="col-2">
+            <div class="weather-forecast-date" id="forecast-feature">${day}</div>
+            <img 
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+            alt=""
+            width="42"
+            />
+          <div class="weather-forecast-temperatures">
+            <span class="weather-forecast-temperature-max"><strong>23°C </strong> | </span>
+            <span class="weather-forecast-temperatures-min">6°C </span>
+          </div>
+       </div>
+</div>
+`;
+}
+forecastHTML= forecastHTML`</div>`;
+forecastelement.innerHTML = forecastHTML; 
 }
 
 function getForecast(coordinates) {
@@ -137,45 +154,5 @@ celsiusLink.addEventListener("click", displayCelsiusTemperature);
 searchCity("Zurich");
 
 
-function displayForecast(){
-let forecastElement = document.querySelector("#forecast");
 
-let forecastHTML =`<div class"row ”>`;
-let days =[""]
-forecastHTML = 
-  forecastHTML + 
-  `
-          <div class="col-2">
-            <div class="weather-forecast-date" id="forecast-feature">Friday</div>
-            <img 
-            src="http://openweathermap.org/img/wn/10d@2x.png"
-            alt=""
-            width="42"
-            />
-          <div class="weather-forecast-temperatures">
-            <span class="weather-forecast-temperature-max"><strong>23°C </strong> | </span>
-            <span class="weather-forecast-temperatures-min">6°C </span>
-          </div>
-       </div>
-</div>
-`;
-forecastHTML = 
-  forecastHTML + 
-  `
-          <div class="col-2">
-            <div class="weather-forecast-date" id="forecast-feature">Friday</div>
-            <img 
-            src="http://openweathermap.org/img/wn/10d@2x.png"
-            alt=""
-            width="42"
-            />
-          <div class="weather-forecast-temperatures">
-            <span class="weather-forecast-temperature-max"><strong>23°C </strong> | </span>
-            <span class="weather-forecast-temperatures-min">6°C </span>
-          </div>
-       </div>
-</div>
-`;
-forecastHTML= forecastHTML`</div>`;
-forecastelement.innerHTML = forecastHTML; 
-}
+
