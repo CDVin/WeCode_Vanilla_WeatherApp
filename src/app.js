@@ -10,13 +10,13 @@ function formatDate(timestamp) {
     minutes = `0${minutes}`;
   }
   let days = [
-    "Friday",
-    "Saturday",
     "Sunday",
     "Monday",
     "Tuesday",
     "Wednesday",
     "Thursday",
+    "Friday",
+    "Saturday",
   ];
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
@@ -24,14 +24,15 @@ function formatDate(timestamp) {
 
 function formatDay(timestamp){
   let date = new Date(timestamp * 1000);
+  let day =date.getDay()
   let days=[ 
-    "Fri",
-    "Sat",
     "Sun",
     "Mon",
     "Tues",
     "Wed",
     "Thurs",
+    "Fri",
+    "Sat",
     ]
 
 return days[day];
