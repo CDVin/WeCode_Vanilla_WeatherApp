@@ -10,18 +10,32 @@ function formatDate(timestamp) {
     minutes = `0${minutes}`;
   }
   let days = [
+    "Friday",
+    "Saturday",
     "Sunday",
     "Monday",
     "Tuesday",
     "Wednesday",
     "Thursday",
-    "Friday",
-    "Saturday",
   ];
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
 
+function formatDay(timestamp){
+  let date = new Date(timestamp * 1000);
+  let days=[ 
+    "Fri",
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tues",
+    "Wed",
+    "Thurs",
+    ]
+
+return days[day];
+}
 
 function displayForecast(response){
 let forecast = response.data.daily;
@@ -34,7 +48,7 @@ forecastHTML =
   forecastHTML + 
   `
           <div class="col-2">
-            <div class="weather-forecast-date" id="forecast-feature">${forecastDay.dt}</div>
+            <div class="weather-forecast-date" id="forecast-feature">${formatDay(forecastDay.dt)}</div>
             <img 
             src="http://openweathermap.org/img/wn/${forecast.weather[0]}10d@2x.png"
             alt=""
