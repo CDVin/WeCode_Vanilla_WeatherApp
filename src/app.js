@@ -22,24 +22,11 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
-function
-function formatDate(timestamp) {
-  let date = new Date(timestamp * 1000);
-  let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
-  return days[date.getDay()];
-}
+
 
 function displayForecast(){
 let forecastElement = document.querySelector("#forecast");
-//forecast for the week
+
 let days =["Friday", "Saturday", "Sunday", "Monday", "Tuesday", "Wednesday"];
 let forecastHTML =`<div class"row ”>`;
 
