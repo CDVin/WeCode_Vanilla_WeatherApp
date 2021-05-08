@@ -138,4 +138,4 @@ fahrenheitLink.addEventListener("click", displayFahrenehitTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
-search("Zurich");
+searchCity("Zurich");
