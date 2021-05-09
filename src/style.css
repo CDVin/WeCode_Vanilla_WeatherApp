@@ -105,9 +105,9 @@ li:first-letter {
 }
 
 .main-temp {
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1;
-  font-size: 64px;
+  font-size: 70px;
 }
 
 .weather-temperature img{
@@ -120,12 +120,13 @@ li:first-letter {
   color: #663399;
   font-size:64px;
   line-height: 1;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .weather-temperature .units {
   position: relative;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .weather-temperature  .active{
