@@ -77,18 +77,18 @@ li:first-letter {
   opacity: 95%;
   background: radial-gradient(
     circle farthest-corner at bottom center,
-#64d7d7 0%,
-#b9f4f4 80%
+   #64d7d7 0%,
+   #b9f4f4 80%
   );
   background: -webkit-radial-gradient(
     circle farthest-corner at bottom center,
-  #64d7d7 0%,
-#b9f4f4 80%
+   #64d7d7 0%,
+   #b9f4f4 80%
   );
   background: -moz-radial-gradient(
     circle farthest-corner at bottom center,
-#64d7d7 0%,
-#b9f4f4 80%
+   #64d7d7 0%,
+   #b9f4f4 80%
   );
 
   color: #663399;  
@@ -152,13 +152,13 @@ li:first-letter {
 }
 
 .weather-forecast-temperature-min {
-  opacity: 0.5;
+  opacity: 0.7;
   text-align: center;
-  font-size:13px; 
+  font-size:15px; 
 }
 
 .weather-forecast-temperatures-max{
-  font-size: 13px;
+  font-size: 15px;
   text-align: center;
   
 }
