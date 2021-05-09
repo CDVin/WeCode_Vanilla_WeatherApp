@@ -39,7 +39,7 @@ li{
   text-transform: capitalize;
   color: #663399;
   font-weight:200;
-  line-height: 30px;
+  line-height: 25px;
 }
 
 
@@ -145,7 +145,7 @@ li:first-letter {
 }
 
 .weather-forecast-date {
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   color: #663399;
   opacity: 0.9;
