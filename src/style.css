@@ -106,15 +106,15 @@ li:first-letter {
 }
 
 .main-temp {
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1;
-  font-size: 64px;
+  font-size: 70px;
 }
 
 .weather-temperature img{
   margin-right:5px;
-  height: 64px;px;
-  width: 64px;
+  height: 70px;px;
+  width: 70px;
 }
 
 .weather-temperature strong{
