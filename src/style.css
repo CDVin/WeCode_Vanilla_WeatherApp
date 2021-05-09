@@ -38,8 +38,8 @@ li{
   font-size:16px;
   text-transform: capitalize;
   color: #663399;
-  font-weight:200;
-  line-height: 30px;
+  font-weight:400;
+  line-height: 25px;
 }
 
 
@@ -54,7 +54,7 @@ li:first-letter {
 }
 
 .btn-primary {
-    color: #0ABAB5;
+    color: #fff;
     background-color: #0fe2ed;
     border-color: #0fe2ed;
 }
@@ -77,18 +77,18 @@ li:first-letter {
   opacity: 95%;
   background: radial-gradient(
     circle farthest-corner at bottom center,
-   #64d7d7 0%,
-   #b9f4f4 80%
+#64d7d7 0%,
+#b9f4f4 80%
   );
   background: -webkit-radial-gradient(
     circle farthest-corner at bottom center,
-   #64d7d7 0%,
-   #b9f4f4 80%
+#64d7d7 0%,
+#b9f4f4 80%
   );
   background: -moz-radial-gradient(
     circle farthest-corner at bottom center,
-   #64d7d7 0%,
-   #b9f4f4 80%
+#64d7d7 0%,
+#b9f4f4 80%
   );
 
   color: #663399;  
@@ -100,13 +100,13 @@ li:first-letter {
 
 .main-image {
   margin-right: 10px;
-  height: 84px;
-  width: 84px;
-  margin-bottom: 30px;
+  height: 70px;
+  width: 70px;
+  margin-bottom: 20px;
 }
 
 .main-temp {
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1;
   font-size: 64px;
 }
@@ -152,7 +152,7 @@ li:first-letter {
 }
 
 .weather-forecast-temperature-min {
-  opacity: 0.7;
+  opacity: 0.5;
   text-align: center;
   font-size:13px; 
 }
