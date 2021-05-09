@@ -1,16 +1,20 @@
 body {
 font-family: Cerebri-Sans,Helvetica,Arial,sans-serif;
 color:#78e0e1;
+
 }
+
 
 
 .container {
 padding: 10px;
-background-image: url();
+background-color: #0ABAB5;
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
 }
+
+
 
 h1 {
   color : #878787;
@@ -65,8 +69,8 @@ li:first-letter {
   max-width: 600px;
   padding: 20px;
   width: 100%;
-  border: 1px solid;
-  border-color: #65f7f7;
+  border: 10px solid;
+  border-color: red;
   border-radius: 10px;
   background-color: #b9f4f4;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
