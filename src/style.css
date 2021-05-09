@@ -69,8 +69,8 @@ li:first-letter {
   max-width: 600px;
   padding: 20px;
   width: 100%;
-  border: 10px solid;
-  border-color: red;
+  border: 5px solid;
+  border-color: #abf1f1;
   border-radius: 10px;
   background-color: #b9f4f4;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
