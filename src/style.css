@@ -176,7 +176,7 @@ li:first-letter {
  text-align: center; 
  color: #21083b;
  margin-bottom: 20px;
- font-size: 16px;
+ font-size: 14px;
  text-align: center; 
 
 } 
@@ -184,8 +184,8 @@ li:first-letter {
 #footer-link {
 color: #21083b;
 margin-bottom: 20px;
- font-size: 16px;
+ font-size: 14px;
  text-align: center; 
- font-weight: 700;
+ font-weight: 900;
 
 }
