@@ -77,18 +77,18 @@ li:first-letter {
   opacity: 95%;
   background: radial-gradient(
     circle farthest-corner at bottom center,
- #b9f4f4 0%,
-    #64d7d7 80%
+#64d7d7 0%,
+#b9f4f4 80%
   );
   background: -webkit-radial-gradient(
     circle farthest-corner at bottom center,
-    #b9f4f4 0%,
-    #64d7d7 80%
+  #64d7d7 0%,
+#b9f4f4 80%
   );
   background: -moz-radial-gradient(
     circle farthest-corner at bottom center,
-    #b9f4f4 0%,
-    #64d7d7 80%
+#64d7d7 0%,
+#b9f4f4 80%
   );
 
   color: rgb(214, 200, 153);  
