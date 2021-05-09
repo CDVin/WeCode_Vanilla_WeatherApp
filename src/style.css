@@ -7,7 +7,7 @@ color:#78e0e1;
 
 .container {
 padding: 10px;
-background-image: url("WeCode_Vanilla_WeatherApp/ZUG.jpeg");
+background-image: url("   ");
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
@@ -154,10 +154,13 @@ li:first-letter {
 }
 
 .footer {
- padding-top:25px;
-  text-align: left;
-  color: black;
-}
+ text-align: left;
+ color: goldenrod;
+ margin-bottom: 20px;
+ font-size: 14px;
+ text-align: center; 
+opacity:0.5;
+} 
 
 #footer-link {
   color: #0abab5
