@@ -174,16 +174,18 @@ li:first-letter {
 
 .footer {
  text-align: center; 
- color: #21083b;
- margin-bottom: 20px;
- font-size: 14px;
+ color: black;
+ margin-bottom: 10px;
+ padding-top: 50px;
+ font-size: 15px;
  text-align: center; 
 
 } 
 
 #footer-link {
-color: #10021e;
-margin-bottom: 20px;
+color:black;
+margin-bottom: 10px;
+ padding-top: 50px;
  font-size: 15px;
  text-align: center; 
  font-weight: 900;
