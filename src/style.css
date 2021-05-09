@@ -1,12 +1,15 @@
 body {
 font-family: Cerebri-Sans,Helvetica,Arial,sans-serif;
-background-color: #11d2cc
 color:#78e0e1;
 }
 
+
 .container {
-  padding: 10px;
-  background-color: #11d2cc
+padding: 10px;
+background-image: url();
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
 }
 
 h1 {
@@ -64,9 +67,12 @@ li:first-letter {
   width: 100%;
   border: 1px solid;
   border-color: #65f7f7;
-  border-radius: 8px;
+  border-radius: 10px;
   background-color: #b9f4f4;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  opacity: 95%;
+
+  
 }
 
 .overview {
@@ -145,6 +151,7 @@ li:first-letter {
 }
 
 .footer {
+ padding-top:25px;
   text-align: left;
   color: black;
 }
