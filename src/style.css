@@ -3,11 +3,10 @@ font-family: Cerebri-Sans,Helvetica,Arial,sans-serif;
 color:#78e0e1;
 }
 
-
-
 .container {
 padding: 10px;
-background-color: #0ABAB5;
+background-image: url("https://www.zug-tourismus.ch/_Resources/Persistent/5e391cb404d3cee2eadbf6f36825e795b82234f4/Fr%C3%BChling_Zug_1-1600x1067.jpg");
+
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
@@ -22,7 +21,7 @@ h1 {
   font-weight: 700; 
   line-height:35px;
   margin-bottom: 0;
-  padding-top: 30px;
+  padding-top: 20px;
 
 }
 
