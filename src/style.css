@@ -39,7 +39,7 @@ li{
   text-transform: capitalize;
   color: #663399;
   font-weight:100;
-  line-height: 18px;
+  line-height: 25px;
 }
 
 
@@ -91,7 +91,7 @@ li:first-letter {
 #b9f4f4 80%
   );
 
-  color: rgb(214, 200, 153);  
+  color: #663399;  
 }
 
 .overview {
@@ -118,7 +118,7 @@ li:first-letter {
 }
 
 .weather-temperature strong{
-  color: rgb(33, 33, 33);
+  color: #663399;
   font-size:64px;
   line-height: 1;
   font-weight: 400;
@@ -130,7 +130,7 @@ li:first-letter {
 }
 
 .weather-temperature  .active{
-  color: rgb(33, 33, 33);
+  color: #663399;
   cursor: default;
 }
 
@@ -147,7 +147,7 @@ li:first-letter {
 .weather-forecast-date {
   font-size: 16px;
   text-align: center;
-  color: black;;
+  color: #663399;
   opacity: 0.5;
 }
 
