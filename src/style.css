@@ -35,11 +35,11 @@ li{
   list-style:none;
   margin: 0; 
   padding: 0;
-  font-size:15px;
+  font-size:16px;
   text-transform: capitalize;
   color: #663399;
   font-weight:200;
-  line-height: 20px;
+  line-height: 30px;
 }
 
 
@@ -108,13 +108,13 @@ li:first-letter {
 .main-temp {
   font-weight: 600;
   line-height: 1;
-  font-size: 70px;
+  font-size: 64px;
 }
 
 .weather-temperature img{
   margin-right:5px;
-  height: 70px;px;
-  width: 70px;
+  height: 64px;px;
+  width: 64px;
 }
 
 .weather-temperature strong{
@@ -154,11 +154,11 @@ li:first-letter {
 .weather-forecast-temperature-min {
   opacity: 0.7;
   text-align: center;
-  font-size:15px; 
+  font-size:13px; 
 }
 
 .weather-forecast-temperatures-max{
-  font-size: 15px;
+  font-size: 13px;
   text-align: center;
   
 }
