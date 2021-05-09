@@ -11,6 +11,7 @@ background-color: #0ABAB5;
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
+opacity:95%;
 }
 
 
@@ -71,11 +72,26 @@ li:first-letter {
   border: 5px solid;
   border-color: #abf1f1;
   border-radius: 10px;
-  background-color: #b9f4f4;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 5px rgba(4, 60, 71, 0.3);
+  background: #b9f4f4 ;
   opacity: 95%;
+  background: radial-gradient(
+    circle farthest-corner at bottom center,
+ #b9f4f4 0%,
+    #64d7d7 80%
+  );
+  background: -webkit-radial-gradient(
+    circle farthest-corner at bottom center,
+    #b9f4f4 0%,
+    #64d7d7 80%
+  );
+  background: -moz-radial-gradient(
+    circle farthest-corner at bottom center,
+    #b9f4f4 0%,
+    #64d7d7 80%
+  );
 
-  
+  color: rgb(214, 200, 153);  
 }
 
 .overview {
@@ -155,11 +171,11 @@ li:first-letter {
 
 .footer {
  text-align: left;
- color: goldenrod;
+ color: whitesmoke;
  margin-bottom: 20px;
  font-size: 14px;
  text-align: center; 
-opacity:0.5;
+ opacity:0.7;
 } 
 
 #footer-link {
