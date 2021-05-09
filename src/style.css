@@ -35,11 +35,11 @@ li{
   list-style:none;
   margin: 0; 
   padding: 0;
-  font-size:16px;
+  font-size:15px;
   text-transform: capitalize;
   color: #663399;
   font-weight:200;
-  line-height: 25px;
+  line-height: 20px;
 }
 
 
