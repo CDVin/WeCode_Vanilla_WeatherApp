@@ -37,7 +37,7 @@ li{
   font-size:16px;
   text-transform: capitalize;
   color: #663399;
-  font-weight:400;
+  font-weight:500;
   line-height: 25px;
 }
 
@@ -120,13 +120,13 @@ li:first-letter {
   color: #663399;
   font-size:64px;
   line-height: 1;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .weather-temperature .units {
   position: relative;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .weather-temperature  .active{
@@ -149,17 +149,20 @@ li:first-letter {
   text-align: center;
   color: #663399;
   opacity: 0.9;
+  font-weight: 700;
 }
 
 .weather-forecast-temperature-min {
   opacity: 0.5;
   text-align: center;
   font-size:13px; 
+  font-weight: 700;
 }
 
 .weather-forecast-temperatures-max{
   font-size: 13px;
   text-align: center;
+  font-weight: 700;
   
 }
 .forecast-feature {
@@ -167,6 +170,7 @@ li:first-letter {
   border-radius: 2px;
   color: rgb(255, 255, 255);
   font-size: 14px;
+  font-weight: 700;
 }
 
 .footer {
