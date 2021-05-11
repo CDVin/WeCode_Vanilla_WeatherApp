@@ -7,6 +7,9 @@ color:#78e0e1;
 padding: 10px;
 background-image: url("../ZUG.jpeg");
 background-size: cover;
+  width: 1200px;
+  height: 1200px;
+background-repeat: no-repeat;
 background-position: center;
 opacity:95%;
 }
@@ -159,9 +162,9 @@ li:first-letter {
 .weather-forecast-temperatures-max{
   font-size: 13px;
   text-align: center;
-  font-weight: 700; 
+  font-weight: 700;
+ 
 }
-
 .forecast-feature {
   background-color: #085458;
   border-radius: 2px;
